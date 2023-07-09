@@ -4049,7 +4049,7 @@ iwx_setup_he_rates(struct iwx_softc *sc)
     struct ieee80211com *ic = &sc->sc_ic;
     
     /* enable 11ax support */
-//    ic->ic_flags |= IEEE80211_F_HEON;
+    ic->ic_flags |= IEEE80211_F_HEON;
     
     ic->ic_he_cap_elem = {
         .mac_cap_info[0] =
