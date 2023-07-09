@@ -60,5 +60,5 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: ${{ github.event.repository.name }}
-        path: ${ BUILD_OUTPUT }/*.*
+        path: ${{ env.BUILD_OUTPUT }}/*.zip
         if-no-files-found: error
